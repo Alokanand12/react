@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #0a0a0c;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --accent-color: #10b981;
+}
+
+body {
+  background: radial-gradient(circle at top left, #1e1b4b, #0f172a, #020617);
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.song-card {
+  background: (white);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  /* Normal border radius */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.song-card:hover {
+  border-color: rgba(172, 87, 87, 0.3);
+  background: rgba(206, 36, 36, 0.627);
+  transform: translateY(-2px);
+}
+
+.song-card.active {
+  border-color: var(--accent-color);
+  background: rgba(16, 185, 129, 0.05);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
+}
+
+.bottom-play-btn {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-color);
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  /* Normal border radius */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+  z-index: 100;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.bottom-play-btn:active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+.custom-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Equalizer Bars */
+.bar {
+  width: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}

@@ -1,0 +1,98 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #b953de, #021f52, #807e06, #d4478c,#1f2937,#0d9488,#6d28d9);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease-in-out;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  width: 350px;
+  overflow: hidden;
+}
+
+.card {
+  width: 700px;
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.card.show-login {
+  transform: translateX(0);
+}
+
+.card.show-signup {
+  transform: translateX(-350px);
+}
+.form {
+  width: 350px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+}
+
+h1 { margin-bottom: 5px; }
+p { margin-top: 0; color: rgb(28, 184, 215); }
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field span {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background: #06a865;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #0feaa9;
+  cursor: pointer;
+}
+
+span {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+}

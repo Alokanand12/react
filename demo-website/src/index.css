@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #0f0f0f;
+}
+
+.bg-card {
+  background: #111;
+}
+
+.text-neon {
+  color: #c6ff00;
+}
+
+.bg-neon {
+  background: #c6ff00;
+}
