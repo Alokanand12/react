@@ -1,0 +1,113 @@
+.article-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 24px;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--primary); }
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.detail-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.detail-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.meta-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.meta-author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: white;
+}
+.meta-author-name { font-weight: 600; color: var(--text); }
+.meta-sep { color: var(--text-dim); }
+
+.owner-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+/* Document content styles */
+.detail-content {
+  font-size: 1.125rem;
+  line-height: 1.85;
+  color: var(--text);
+}
+.detail-content p { margin-bottom: 20px; }
+.detail-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+.detail-content h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+.detail-content code {
+  background: rgba(99,102,241,0.08);
+  color: var(--primary);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.detail-footer {
+  text-align: center;
+  padding-top: 32px;
+  color: var(--text-dim);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .detail-title { font-size: 1.8rem; }
+  .detail-content { font-size: 1rem; }
+}
